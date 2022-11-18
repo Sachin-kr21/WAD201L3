@@ -16,9 +16,9 @@ const todoList = () => {
       lst=[]
       for (let i=0 ; i< all.length ; i++){
         if (all[i]['dueDate']==yesterday){
-            lst1="[ ]"
+            lst1="[ ] "
             if (all[i]['completed']==true){
-                lst1="[x]"
+                lst1="[x] "
             }
             lst.push(lst1+all[i]['title']+" "+yesterday)
         }
@@ -36,9 +36,9 @@ const todoList = () => {
       lst=[]
       for (let i=0;i<all.length;i++){
         if (all[i]['dueDate']==today){
-            lst1="[ ]"
+            lst1="[ ] "
             if (all[i]['completed']==true){
-                lst1="[x]"
+                lst1="[x] "
             }
         lst.push(lst1+all[i]['title'])
         }
@@ -56,9 +56,9 @@ const todoList = () => {
       lst=[]
       for (let i=0;i<all.length;i++){
         if (all[i]['dueDate']==tomorrow){
-            lst1="[ ]"
+            lst1="[ ] "
             if (all[i]['completed']==true){
-                lst1="[x]"
+                lst1="[x] "
             }
         lst.push(lst1+all[i]['title']+" "+tomorrow)
         }

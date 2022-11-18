@@ -20,7 +20,7 @@ const todoList = () => {
             if (all[i]['completed']==true){
                 lst1="[x]"
             }
-            lst.push(s+all[i]['title']+" "+yesterday)
+            lst.push(lst1+all[i]['title']+" "+yesterday)
         }
         
       }
@@ -40,7 +40,7 @@ const todoList = () => {
             if (all[i]['completed']==true){
                 lst1="[x]"
             }
-        lst.push(s+all[i]['title'])
+        lst.push(lst1+all[i]['title'])
         }
 
       }
@@ -60,7 +60,7 @@ const todoList = () => {
             if (all[i]['completed']==true){
                 lst1="[x]"
             }
-        lst.push(s+all[i]['title']+" "+tomorrow)
+        lst.push(lst1+all[i]['title']+" "+tomorrow)
         }
 
       }
@@ -75,7 +75,8 @@ const todoList = () => {
       // ..
       // ..
       // return OUTPUT_STRING
-      return list.join("\n")
+      str1=list.join("\n")
+      return str1
     }
   
     return { all, add, markAsComplete, overdue, dueToday, dueLater, toDisplayableList };
